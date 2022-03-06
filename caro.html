@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Caro</title>
+  <style>
+    td{
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+<table id="board" ></table>
+<script>
+  function creatBoard(){
+    let row =10
+    let col = 10
+    let html=""
+
+    for ( let i=0;i<row;i++){
+      html +="<tr>"
+      for ( let j=0;j<col;j++){
+        html +="<td></td>"
+      }
+      html+="</tr>"
+    }
+    document.getElementById("board").innerHTML = html
+  }
+  creatBoard()
+</script>
+</body>
+</html>
